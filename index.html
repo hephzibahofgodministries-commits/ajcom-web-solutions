@@ -1,0 +1,384 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A. JCOM Web Solutions provides professional website design, development and website management for businesses, churches and organisations.">
+  <title>A. JCOM Web Solutions | Digital Solutions</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #263449;
+      line-height: 1.7;
+      background: #ffffff;
+    }
+
+    header {
+      background: #102c56;
+      color: white;
+      padding: 20px 7%;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .brand {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .brand span {
+      display: block;
+      color: #9fc8ff;
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #9fc8ff;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #102c56, #2878d0);
+      color: white;
+      text-align: center;
+      padding: 110px 7%;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 55px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 17px;
+      color: #e0ecff;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #102c56;
+      padding: 13px 25px;
+      margin-top: 28px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 75px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+      color: #102c56;
+      font-size: 30px;
+    }
+
+    .section-title p {
+      color: #68778b;
+    }
+
+    .about {
+      background: #f3f7fc;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .services,
+    .portfolio,
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .service-card,
+    .project-card,
+    .price-card {
+      padding: 25px;
+      border: 1px solid #e1e8f0;
+      border-radius: 9px;
+      box-shadow: 0 4px 15px rgba(16,44,86,0.05);
+    }
+
+    .service-card h3,
+    .project-card h3,
+    .price-card h3 {
+      color: #175ba5;
+      margin-bottom: 10px;
+    }
+
+    .project-card {
+      background: #f3f7fc;
+    }
+
+    .price-card strong {
+      display: block;
+      color: #102c56;
+      font-size: 25px;
+      margin: 12px 0;
+    }
+
+    .contact {
+      background: #102c56;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 15px;
+    }
+
+    .contact a {
+      color: #a9d1ff;
+    }
+
+    footer {
+      background: #091d39;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      .navbar {
+        flex-direction: column;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0;
+      }
+
+      .hero {
+        padding: 75px 6%;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="brand">
+      A. JCOM
+      <span>WEB SOLUTIONS</span>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <h1>Building Your Vision Into Digital Reality.</h1>
+
+  <p>
+    We design and develop professional, responsive
+    websites that help churches, businesses and
+    organisations establish a strong digital presence.
+  </p>
+
+  <a class="btn" href="#contact">Start Your Project</a>
+</section>
+
+<section class="about" id="about">
+  <div class="section-title">
+    <h2>About A. JCOM Web Solutions</h2>
+    <p>Your digital partner for professional growth.</p>
+  </div>
+
+  <p>
+    A. JCOM Web Solutions is a digital services brand
+    committed to helping businesses, churches,
+    ministries, schools and organisations communicate
+    effectively through modern websites.
+
+    Our focus is on attractive design, responsive
+    layouts, usability and reliable website solutions.
+  </p>
+</section>
+
+<section id="services">
+  <div class="section-title">
+    <h2>Our Services</h2>
+    <p>Digital solutions for your organisation.</p>
+  </div>
+
+  <div class="services">
+    <div class="service-card">
+      <h3>Website Design</h3>
+      <p>Beautiful and professional websites for businesses and organisations.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Church Websites</h3>
+      <p>Church and ministry websites with programmes, sermons and information.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Business Websites</h3>
+      <p>Digital platforms to showcase your products and services.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Website Management</h3>
+      <p>Website updates, content publishing and maintenance.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Website Redesign</h3>
+      <p>Modernise your existing website and improve its presentation.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Digital Branding</h3>
+      <p>Website graphics, banners and digital presentation materials.</p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="section-title">
+    <h2>Our Portfolio</h2>
+    <p>Selected demonstration projects.</p>
+  </div>
+
+  <div class="portfolio">
+    <div class="project-card">
+      <h3>Ministry Website</h3>
+      <p>A church and ministry website demonstration.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Business Website</h3>
+      <p>A professional business website demonstration.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>School Website</h3>
+      <p>A school information website demonstration.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="section-title">
+    <h2>Our Starting Prices</h2>
+    <p>Affordable solutions for different needs.</p>
+  </div>
+
+  <div class="pricing">
+    <div class="price-card">
+      <h3>Basic Website</h3>
+      <strong>₦35,000</strong>
+      <p>One-page website.</p>
+    </div>
+
+    <div class="price-card">
+      <h3>Business Website</h3>
+      <strong>₦60,000</strong>
+      <p>Basic multi-page website.</p>
+    </div>
+
+    <div class="price-card">
+      <h3>Professional Website</h3>
+      <strong>₦100,000</strong>
+      <p>Professional multi-page website.</p>
+    </div>
+  </div>
+  <p style="text-align:center; margin-top:20px;">
+    Final quotations depend on project requirements.
+    Domain and third-party service costs are separate.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Let's Build Your Website</h2>
+
+  <p>
+    Have a project in mind? Contact us and let's
+    discuss how we can bring your vision to life.
+  </p>
+
+  <p style="margin-top:20px;">
+    Email:
+    <a href="mailto:jcomdigital@gmail.com">
+      jcomdigital@gmail.com
+    </a>
+  </p>
+
+  <a class="btn" href="mailto:jcomdigital@gmail.com?subject=Website%20Project%20Enquiry">
+    Contact Us
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <p>
+    &copy; 2026 A. JCOM Web Solutions.
+    All Rights Reserved.
+  </p>
+  <p>Building Your Vision Into Digital Reality.</p>
+</footer>
+
+</body>
+</html>
